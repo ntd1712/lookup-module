@@ -1,0 +1,14 @@
+#modules:
+#  lookup:
+#    foo: 'bar'
+
+doctrine:
+  entity_managers:
+    default:
+      mappings:
+        Chaos\Modules\Lookup\Entity:
+          mapping: true
+          type: 'annotation'
+          dir: '%base_path%/modules/core/Lookup/src/Entity'
+          alias: 'Lookup'
+          use_simple_annotation_reader: false
